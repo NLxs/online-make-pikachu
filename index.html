@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style id="styleTag"></style>
+  <link rel="stylesheet" href="style.css">
+  <title>皮卡丘的制作过程</title>
+</head>
+<body>
+  <div class="code-wrapper">
+    <pre id="code"></pre>
+  </div>
+  <div class="preview-wrapper">
+    <div class="preview">
+      <div class="wrapper">
+        <!--css前面的被后面的压, 文档流原理-->
+        <!-- 下嘴唇 放到最前面想到于将其他div加上z-index 1 -->
+        <div class="lowerLip-wrapper">
+          <div class="lowerLip"></div>
+        </div>
+        <!-- 鼻子 -->
+        <div class="nose"></div>
+        <!-- 眼睛 -->
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <!-- 脸部红晕 -->
+        <div class="face left"></div>
+        <div class="face right"></div>
+        <!-- 上嘴唇 -->
+        <div class="upperLip left"></div>
+        <div class="upperLip right"></div>
+      </div>
+    </div>
+  </div>
+  <div class="actions">
+    <button data-speed="slow">慢速</button>
+    <button data-speed="normal">默认</button>
+    <button data-speed="fast">快速</button>
+  </div>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

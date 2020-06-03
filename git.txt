@@ -1,0 +1,6 @@
+初始化
+git init
+查看git会上传那些文件
+git status -sb
+强制添加文件(忽略.gitignore的配置)
+git add -f 文件路径(GitHub上部署会有问题\不推荐)
